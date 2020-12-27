@@ -3,3 +3,15 @@ type: module
 description: ''
 package: Dyniva
 core: 8.x
+dependencies:
+   - datetime_range
+   - entity_browser
+   - field
+   - field_group
+   - menu_ui
+   - monitoring
+   - node
+   - path
+   - taxonomy
+   - text
+   - user

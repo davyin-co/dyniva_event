@@ -1,0 +1,24 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+id: node_new_event
+label: 'New Event nodes'
+description: 'New nodes of type Event'
+category: Content
+plugin_id: entity_aggregator
+result_class: null
+value_label: 'Event nodes'
+value_type: number
+caching_time: 600
+settings:
+  entity_type: node
+  conditions:
+    -
+      field: type
+      value: event
+  time_interval_field: created
+  time_interval_value: 86400
+thresholds:
+  type: none
