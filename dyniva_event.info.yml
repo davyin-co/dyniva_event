@@ -9,7 +9,6 @@ dependencies:
    - field
    - field_group
    - menu_ui
-   - monitoring
    - node
    - path
    - taxonomy
