@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.featured_media
+    - media.type.image
     - node.type.event
 id: node.event.featured_media
 field_name: featured_media
@@ -15,12 +16,13 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      event: event
+      image: image
     sort:
-      field: _none
+      field: changed
+      direction: DESC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
