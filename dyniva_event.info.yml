@@ -6,6 +6,7 @@ core: 8.x
 dependencies:
   - datetime_range
   - entity_browser
+  - lightning_media_image
   - field
   - field_group
   - menu_ui

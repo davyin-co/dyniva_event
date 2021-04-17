@@ -6,6 +6,8 @@
     "license": "GPL-2.0-or-later",
     "homepage": "https://github.com/davyin-co/dyniva_event",
     "require": {
-        "drupal/core": "^8.6 || ^9"
+        "drupal/core": "^8.6 || ^9",
+        "drupal/lightning_media":"^4.5",
+        "drupal/lightning_media":"^5.5"
     }
 }
