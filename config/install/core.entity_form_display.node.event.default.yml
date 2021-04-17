@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.image_browser
     - field.field.node.event.body
     - field.field.node.event.event_date
     - field.field.node.event.event_location
@@ -11,7 +10,7 @@ dependencies:
     - node.type.event
   module:
     - datetime_range
-    - entity_browser
+    - media_library
     - field_group
     - path
     - text
@@ -76,18 +75,11 @@ content:
     type: options_select
     region: content
   featured_media:
+    type: media_library_widget
     weight: 1
     settings:
-      entity_browser: image_browser
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: true
-      selection_mode: selection_append
-      open: false
-      field_widget_display_settings: {  }
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_browser_entity_reference
     region: content
   langcode:
     type: language_select
