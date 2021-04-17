@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - media
 id: node.featured_media
 field_name: featured_media
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: media
 module: core
 locked: false
 cardinality: 1
